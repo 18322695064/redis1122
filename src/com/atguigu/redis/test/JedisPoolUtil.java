@@ -15,7 +15,7 @@ public class JedisPoolUtil
 		if(null == jedisPool)
 		{
 			synchronized (JedisPoolUtil.class)
-			{
+ //启动线程保护			{
 				if(null == jedisPool)
 				{
 					JedisPoolConfig poolConfig = new JedisPoolConfig();
